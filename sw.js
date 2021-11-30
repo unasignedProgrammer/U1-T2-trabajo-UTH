@@ -9,7 +9,6 @@ var urlsToCache = [
 
 self.addEventListener('install', function (event) {
     //Perform install steps
-    Notification.requestPermission();
     event.waitUntil(
         caches.open(CACHE_NAME).then((caches) => {
             console.log('Opened cache');
