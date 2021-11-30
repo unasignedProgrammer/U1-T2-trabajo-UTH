@@ -12,6 +12,8 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then((caches) => {
             console.log('Opened cache');
+            Notification.requestPermission();
+
             return caches.addAll(urlsToCache);
         })
     );
@@ -19,7 +21,6 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('activate', (event) => {
     console.log('El SW se ha activado.');
-    Notification.requestPermission();
 });
 
 self.addEventListener('fetch', function (event) {
