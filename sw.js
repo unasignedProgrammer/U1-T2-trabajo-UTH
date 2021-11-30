@@ -19,11 +19,7 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('activate', (event) => {
     console.log('El SW se ha activado.');
-    Notification.requestPermission().then(function (result) {
-        if (result === 'granted') {
-            randomNotification();
-        }
-    });
+    Notification.requestPermission();
 });
 
 self.addEventListener('fetch', function (event) {
