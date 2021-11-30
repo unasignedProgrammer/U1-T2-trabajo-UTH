@@ -11,7 +11,7 @@ button.addEventListener('click', function (e) {
 function NotificacionRandom() {
     var notifTitle = 'Mucho love';
     var notifBody = 'Gracias por habilitar notificaiones!';
-    var notifImg = './imagenes/iconos/icono-72.png';
+    var notifImg = '/U1-T2-trabajo-UTH/imagenes/iconos/icono-72.png';
 
     var options = {
         body: notifBody,
