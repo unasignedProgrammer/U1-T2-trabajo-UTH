@@ -1,11 +1,9 @@
 var button = document.querySelector('#notificacionBtn');
 
 button.addEventListener('click', function (e) {
-    Notification.requestPermission().then(function (result) {
-        if (Notification.permission == 'granted') {
-            NotificacionRandom();
-        }
-    });
+    if (Notification.permission == 'granted') {
+        NotificacionRandom();
+    }
 });
 
 function NotificacionRandom() {

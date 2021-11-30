@@ -1,14 +1,15 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-    '/',
-    '/index.html',
-    '/imagenes/computah.png',
-    '/imagenes/user.png',
+    '/U1-T2-trabajo-UTH/',
+    '/U1-T2-trabajo-UTH/index.html',
+    '/U1-T2-trabajo-UTH/imagenes/computah.png',
+    '/U1-T2-trabajo-UTH/imagenes/user.png',
     'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css',
 ];
 
 self.addEventListener('install', function (event) {
     //Perform install steps
+    Notification.requestPermission();
     event.waitUntil(
         caches.open(CACHE_NAME).then((caches) => {
             console.log('Opened cache');
