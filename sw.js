@@ -12,8 +12,6 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then((caches) => {
             console.log('Opened cache');
-            Notification.requestPermission();
-
             return caches.addAll(urlsToCache);
         })
     );

@@ -4,24 +4,11 @@ if (navigator.serviceWorker) {
     navigator.serviceWorker
         .register('./sw.js')
         .then((registration) => {
-            console.log('Service Worker Registration Success : ', registration);
+            console.log('Service Worker Registration Success');
         })
         .catch((err) => {
-            console.log('Service Worker Registration Failed: ', err);
+            console.log('Service Worker Registration Failed: ');
         });
-
-    if (navigator.serviceWorker.controller) {
-        console.log(
-            'This page currently controlled by : ',
-            navigator.serviceWorker.controller
-        );
-    }
-    navigator.serviceWorker.oncontrollerchange = function () {
-        console.log(
-            'This page is now controlled by:',
-            navigator.serviceWorker.controller
-        );
-    };
 } else {
     console.log(
         'NO esta disponible el trabajo con el Service worker en este browser'
