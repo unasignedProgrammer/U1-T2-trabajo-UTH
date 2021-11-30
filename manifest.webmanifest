@@ -3,7 +3,7 @@
     "background_color": "#111827",
     "display": "browser",
     "scope": "/U1-T2-trabajo-UTH/index.html",
-    "start_url": "/index.html",
+    "start_url": "/U1-T2-trabajo-UTH/index.html",
     "short_name": "comerci",
     "name": "super comerci",
     "icons": [{
