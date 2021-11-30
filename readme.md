@@ -1,2 +1,1 @@
-#Readme
-Trabajo escolar de PWA
+Trabajo escolar de PWA.
