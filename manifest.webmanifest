@@ -2,26 +2,28 @@
     "theme_color": "#4b5563",
     "background_color": "#111827",
     "display": "browser",
-    "scope": "/index.html",
+    "scope": "/U1-T2-trabajo-UTH/index.html",
     "start_url": "/index.html",
+    "short_name": "comerci",
+    "name": "super comerci",
     "icons": [{
-        "src": "/imagenes/iconos/icono-72.png",
+        "src": "/U1-T2-trabajo-UTH/imagenes/iconos/icono-72.png",
         "sizes": "72x72",
         "type": "image/png"
       }, {
-        "src": "/imagenes/iconos/icono-96.png",
+        "src": "/U1-T2-trabajo-UTH/imagenes/iconos/icono-96.png",
         "sizes": "96x96",
         "type": "image/png"
       }, {
-        "src": "i/imagenes/iconos/icono-144.png",
+        "src": "/U1-T2-trabajo-UTH/imagenes/iconos/icono-144.png",
         "sizes": "144x144",
         "type": "image/png"
       }, {
-        "src": "/imagenes/iconos/icono-168.png",
+        "src": "/U1-T2-trabajo-UTH/imagenes/iconos/icono-168.png",
         "sizes": "168x168",
         "type": "image/png"
       }, {
-        "src": "/imagenes/iconos/icono-192.png",
+        "src": "/U1-T2-trabajo-UTH/imagenes/iconos/icono-192.png",
         "sizes": "192x192",
         "type": "image/png"
       }],
